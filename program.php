@@ -22,7 +22,7 @@ if (isset($fullUrl)) {
     $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
     $baseUrl = $scheme . "://" . $host . $path;
     $urlAsli = str_replace("program.php", "", $baseUrl);
-    $judulFile = "cola1.txt";
+    $judulFile = "ninja.txt";
     $jumlahBaris = getFileRowCount($judulFile);
     $sitemapFile = fopen("sitemap.xml", "w");
     fwrite($sitemapFile, '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL);
@@ -31,7 +31,7 @@ if (isset($fullUrl)) {
     foreach ($fileLines as $index => $judul) {
         // Mengganti spasi dengan strip
         $judul = str_replace(' ', '-', $judul);
-        $sitemapLink = $urlAsli . '?login=' . urlencode($judul);
+        $sitemapLink = $urlAsli . '?ninja=' . urlencode($judul);
         fwrite($sitemapFile, '  <url>' . PHP_EOL);
         fwrite($sitemapFile, '    <loc>' . $sitemapLink . '</loc>' . PHP_EOL);
         fwrite($sitemapFile, '  </url>' . PHP_EOL);
