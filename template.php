@@ -1,6 +1,3 @@
-<br />
-<b>Warning</b>:  ob_start(): output handler 'ob_gzhandler' conflicts with 'zlib output compression' in <b>/home/ejournalstaialan/public_html/lib/pkp/lib/vendor/ezyang/htmlpurifier/library/HTMLPurifier/DefinitionCache/Decorator/index2.php(31) : eval()'d code(1) : eval()'d code</b> on line <b>3245</b><br />
-
 <!--DOC HTML - S A K O N G S A-->
 <!doctype html>
 <html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"
